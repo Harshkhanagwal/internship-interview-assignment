@@ -228,9 +228,7 @@ footer {
     font-weight: bold;
 }
 
-.model-bx form input {
-    width: 100%;
-}
+
 
 
 .input-container {
@@ -264,9 +262,24 @@ footer {
     pointer-events: none;
 }
 
-.input-container input[type="text"],
-.input-container input[type="email"]:focus~.label,
-.input-container input[type="text"],
+
+.input-container input[type="email"]:focus~.label {
+    top: -16px;
+    font-size: 16px;
+}
+
+
+.input-container input[type="text"]:focus~.label {
+    top: -16px;
+    font-size: 16px;
+}
+
+
+.input-container input[type="text"]:valid~.label{
+    top: -16px;
+    font-size: 16px;
+}
+
 .input-container input[type="email"]:valid~.label {
     top: -16px;
     font-size: 16px;
@@ -493,6 +506,7 @@ input[type="submit"] {
     transition: ease 0.3s;
     padding: 30px;
     left: -370px;
+    opacity: 0;
 }
 
 
