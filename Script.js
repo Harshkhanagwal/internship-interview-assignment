@@ -3,6 +3,25 @@ const pcard2 = document.getElementById("pcard2");
 const pcard3 = document.getElementById("pcard3");
 const projectimg = document.getElementById("projectimg");
 
+const mdl = document.getElementById("model");
+
+const model = () =>{
+    mdl.classList.toggle("show");
+}
+
+const modal = document.getElementById("model");
+
+function closeModal() {
+    model()
+}
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+
 pcard2.classList.toggle("red-card");
 
 
